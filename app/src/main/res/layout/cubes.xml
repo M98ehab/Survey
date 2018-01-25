@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Method2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:text="Adjustment of Traverse :"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage,TextViewEdits" />
+
+    <TextView
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Method2"
+        android:layout_marginTop="21dp"
+        android:text="sides :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/sides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter no. of sides"
+        android:inputType="number"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="18dp"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_alignBaseline="@+id/editText9"
+        android:layout_alignBottom="@+id/editText9"
+        android:layout_toEndOf="@+id/editText9"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:id="@+id/l1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lengths"
+        android:ems="10"
+        android:hint="L1"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/l2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l1"
+        android:ems="10"
+        android:hint="L2"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/l3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l2"
+        android:ems="10"
+        android:hint="L3"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/l4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l3"
+        android:ems="10"
+        android:hint="L4"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/l5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l4"
+        android:ems="10"
+        android:hint="L5"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/l6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l5"
+        android:ems="10"
+        android:hint="L6"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/l7"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/l6"
+        android:ems="10"
+        android:hint="L7"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <TextView
+        android:id="@+id/lengths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sides"
+        android:text="Lengths"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/bearings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearings"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_below="@+id/sides"
+        android:layout_alignStart="@+id/b1" />
+
+    <EditText
+        android:id="@+id/b1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B1"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_below="@+id/bearings"
+        android:layout_toEndOf="@+id/error" />
+
+    <EditText
+        android:id="@+id/b2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B2"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_below="@+id/b1"
+        android:layout_alignStart="@+id/b1" />
+
+    <EditText
+        android:id="@+id/b3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B3"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_alignBaseline="@+id/l3"
+        android:layout_alignBottom="@+id/l3"
+        android:layout_alignStart="@+id/b2" />
+
+    <EditText
+        android:id="@+id/b4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B4"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_below="@+id/b3"
+        android:layout_alignStart="@+id/b3" />
+
+    <EditText
+        android:id="@+id/b5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B5"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_below="@+id/b4"
+        android:layout_alignStart="@+id/b4" />
+
+    <EditText
+        android:id="@+id/b6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B6"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_below="@+id/b5"
+        android:layout_alignStart="@+id/b5" />
+
+    <EditText
+        android:id="@+id/b7"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="B7"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="17dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage"
+        android:layout_below="@+id/b6"
+        android:layout_alignStart="@+id/b6" />
+
+    <TextView
+        android:id="@+id/dx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sides"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/bearings"
+        android:text="dx"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/dx1"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText,SmallSp"
+        android:layout_below="@+id/dx"
+        android:layout_alignStart="@+id/dx" />
+
+    <TextView
+        android:id="@+id/dx2"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/dx1"
+        android:layout_below="@+id/dx1"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dx3"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/dx1"
+        android:layout_below="@+id/dx2"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dx4"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/dx1"
+        android:layout_below="@+id/dx3"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dx5"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/dx1"
+        android:layout_below="@+id/dx4"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dx6"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/dx1"
+        android:layout_below="@+id/dx5"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dx7"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/dx1"
+        android:layout_below="@+id/dx6"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dy"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_below="@+id/sides"
+        android:layout_alignEnd="@+id/sides"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/dy1"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/dy"
+        android:layout_alignStart="@+id/dy" />
+
+    <TextView
+        android:id="@+id/dy2"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText,UnknownId"
+        android:layout_below="@+id/dy1"
+        android:layout_alignStart="@+id/dy1" />
+
+    <TextView
+        android:id="@+id/dy3"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/dy2"
+        android:layout_alignStart="@+id/dy2" />
+
+    <TextView
+        android:id="@+id/dy4"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/dy3"
+        android:layout_alignStart="@+id/dy3" />
+
+    <TextView
+        android:id="@+id/dy5"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/dy4"
+        android:layout_alignStart="@+id/dy4" />
+
+    <TextView
+        android:id="@+id/dy6"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/dy5"
+        android:layout_alignStart="@+id/dy5" />
+
+    <TextView
+        android:id="@+id/dy7"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/dy6"
+        android:layout_alignStart="@+id/dy6" />
+
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sev"
+        android:text="calc"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/dy5"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="70dp"
+        android:layout_height="33dp"
+        android:layout_alignBottom="@+id/sides"
+        android:layout_alignStart="@+id/calc"
+        android:background="@drawable/sev"
+        android:text="Enter"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/error"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sev"
+        android:visibility="invisible"
+        android:text="c.error"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp" />
+
+    <TextView
+        android:id="@+id/closing"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="22dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_alignBaseline="@+id/error"
+        android:layout_alignBottom="@+id/error"
+        android:layout_alignEnd="@+id/dx" />
+</RelativeLayout>

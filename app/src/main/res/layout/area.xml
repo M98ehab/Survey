@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:text="Trapezoidal Method:"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        tools:ignore="HardcodedText,SpUsage,TextViewEdits"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text="Distance :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_below="@+id/Method"
+        android:layout_alignStart="@+id/Method" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Distance"
+        android:layout_alignBottom="@+id/Distance"
+        android:layout_alignStart="@+id/columns"
+        android:ems="10"
+        android:hint="Enter the distance"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="13dp"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Columns :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="17dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_alignBaseline="@+id/columns"
+        android:layout_alignBottom="@+id/columns"
+        android:layout_alignStart="@+id/Distance" />
+
+    <EditText
+        android:id="@+id/columns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter number of columns"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="13dp"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/columns"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Height 1"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/h1"
+        android:ems="10"
+        android:hint="Height 2"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/h2"
+        android:ems="10"
+        android:hint="Height 3"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/h3"
+        android:ems="10"
+        android:hint="Height 4"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h5"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/h4"
+        android:ems="10"
+        android:hint="Height 5"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h9"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/h8"
+        android:layout_below="@+id/h8"
+        android:ems="10"
+        android:hint="Height 9"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="DuplicateIds,HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h12"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/h11"
+        android:layout_below="@+id/h11"
+        android:ems="10"
+        android:hint="Height 12"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h6"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/h7"
+        android:layout_alignStart="@+id/columns"
+        android:layout_marginStart="18dp"
+        android:ems="10"
+        android:hint="Height 6"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h7"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/h8"
+        android:layout_alignStart="@+id/h6"
+        android:ems="10"
+        android:hint="Height 7"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h8"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/h3"
+        android:layout_alignBottom="@+id/h3"
+        android:layout_alignStart="@+id/h7"
+        android:ems="10"
+        android:hint="Height 8"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h13"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/h14"
+        android:layout_below="@+id/h12"
+        android:ems="10"
+        android:hint="Height 13"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h14"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/h15"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:hint="Height 14"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h15"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/h10"
+        android:layout_alignBottom="@+id/h10"
+        android:layout_alignStart="@+id/h13"
+        android:ems="10"
+        android:hint="Height 15"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h11"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/h6"
+        android:layout_alignBottom="@+id/h6"
+        android:layout_alignStart="@+id/h14"
+        android:ems="10"
+        android:hint="Height 11"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <EditText
+        android:id="@+id/h10"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/h9"
+        android:layout_below="@+id/h9"
+        android:ems="10"
+        android:hint="Height 10"
+        android:inputType="number|numberDecimal"
+        android:textColor="@android:color/background_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        tools:ignore="HardcodedText,LabelFor,SpUsage" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/sev"
+        android:text="Area"
+        android:textColor="@android:color/background_light"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20dp"
+        tools:ignore="HardcodedText,SpUsage"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignStart="@+id/columns" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/text2"
+        android:layout_toEndOf="@+id/editText"
+        android:background="@drawable/sev"
+        android:text="input"
+        android:textColor="@android:color/background_light"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
